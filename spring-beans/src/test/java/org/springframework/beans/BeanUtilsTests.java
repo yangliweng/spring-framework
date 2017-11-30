@@ -87,6 +87,9 @@ public class BeanUtilsTests {
 		}
 	}
 
+	/**
+	 * 通过findEditorByConvention方法找到对应的ResourceEditor类
+	 */
 	@Test
 	public void testFindEditorByConvention() {
 		assertEquals(ResourceEditor.class, BeanUtils.findEditorByConvention(Resource.class).getClass());
